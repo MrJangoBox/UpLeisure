@@ -78,6 +78,7 @@ var app = {
             // Forward transition (slide from right)
             $(page.el).attr('class', 'page stage-right');
             currentPageDest = "stage-left";
+            $(':focus').blur();
         }
 
         $('body').append(page.el);
